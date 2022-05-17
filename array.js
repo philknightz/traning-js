@@ -31,3 +31,29 @@ console.log("Slice: ", array.slice(0, 1), array)
 
 // 10. concat() -> return array = connect array 
 console.log("Concat: ", array.concat(["d"]), array)
+
+// --------------------------------------------- Loop
+
+// 11. forEach -> loop all value of array -> nothing return
+array.forEach((value) => {
+  console.log("For each", value);
+});
+
+// 12. every -> every property satisfy condition -> return boolean 
+const isSatisfyEvery = array.every((value, index) => {
+  return value === "a";
+});
+console.log("Is satisfy every: ", isSatisfyEvery);
+
+// 13. some -> some property satisfy condition -> return boolean 
+const isSatisfySome = array.some((value, index) => {
+    return value === "a";
+});
+console.log("Is some every: ", isSatisfySome);
+
+// 13. find -> find one element satisfy condition -> return value
+const find = array.find((value, index) => {
+    return value === "a";
+});
+console.log("Find :", find);
+
